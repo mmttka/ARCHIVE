@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+/* common */
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  width: calc(100% - 64px);
+  padding: 32px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  opacity: .7;
+}
+
+
+/* header */
+
+header {
+  max-width: 600px
+}
+
+/* main */
+
+h2 {
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: 32px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 32px;
+  gap: 32px;
+}
+
+/* ここから2つ重要。 */
+.product{
+  width: calc((100% - 64px) / 3);
+}
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product p {
+  margin-top: 8px;
+}
+
+
+/* footer */
+
+footer {
+  text-align: center;
+  margin-top: 32px;
+}
+
+
+/* リンク先ページ、今回はシンプルなのでcssは1枚に書く */
+.product-next {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.product-next div {
+  flex: 1;
+}
+
+.product-next img {
+  width: 100%;
+  height: auto;
+}
+
+.product-next p {
+  margin-top: 16px;
+}
+
+.product-next button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+
